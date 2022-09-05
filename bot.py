@@ -66,7 +66,7 @@ async def on_message(message):
 
   msg = message.content
 
-  if msg.startswith('!'):
+  if msg.startswith('!quote'):
     quote = get_quote()
     await message.channel.send(quote)
     topic_arn = os.getenv('TOPIC_ARN')
